@@ -6,8 +6,6 @@ const menu = {
 
 };
 
-const OrderItem = [];
-
 // Function to display menu items by category
 function displayMenuItems(menu) {
     // Get the menu container element from the HTML
@@ -27,7 +25,7 @@ function displayMenuItems(menu) {
         // Loop through the items in the category and create list items
         for (const item of items)
         {
-            // Create a list item element
+            // Create a list item element 
             const itemList = document.createElement('li');
             // Set the text content of the list item element to the item name
             itemList.textContent = item;
@@ -50,14 +48,16 @@ function addToOrder(itemName) {
     // Set the text content of the list item to the item name
     listItem.textContent = itemName;
     // Append the list item to the order items list
-    orderItems.appendChild(ListItems);
+    orderItems.appendChild(listItem);
     // Calculate and update the total price
-    listItem.push(itemName);
+    //listItem.push(itemName);
     
     const ItemPrice = 20;
-    const ItemTotal = orderItems.length * ItemPrice;
+    const ItemTotal = 10 * ItemPrice;
+
+    const newtotal = ItemTotal + ItemPrice;
     // Update the text content of the order total element with the new total
-    orderTotalElement.textContent = ItemTotal;
+    orderTotalElement.textContent = newtotal;
 }
 
 // Function to initialize the menu system
