@@ -12,7 +12,6 @@ function displayMenuItems(menu) {
     // Get the menu container element from the HTML
     const menuContainer = document.getElementById('menu');
     // Loop through each category and its items in the menu object
-    
     for (const [category, items] of Object.entries(menu)) {
         // Create an element to represent the category
         const categoryElement = document.createElement('h2');
@@ -54,12 +53,10 @@ function addToOrder(itemName) {
     // Calculate and update the total price
     //listItem.push(itemName);
     
-    const ItemPrice = 20;
-    const ItemTotal = 10 * ItemPrice;
-
-    const newtotal = ItemTotal + ItemPrice;
-    // Update the text content of the order total element with the new total
-    orderTotalElement.textContent = newtotal;
+    const itemPrice = parseFloat();
+    const currentTotal = 60; // Assuming each item costs R90 (you can customize this)
+    const newTotal = "";
+    orderTotalElement.textContent = newTotal.toFixed(2);
 }
 
 // Function to initialize the menu system
