@@ -1,4 +1,5 @@
 // Sample menu data (Consider fetching this data from a server in a real-world scenario)
+// Given menu book by waiter
 const menu = {
     Starters: ["Garlic Bread", "Bruschetta"],
     MainCourses: ["Margherita Pizza", "Spaghetti Carbonara"],
@@ -11,6 +12,7 @@ function displayMenuItems(menu) {
     // Get the menu container element from the HTML
     const menuContainer = document.getElementById('menu');
     // Loop through each category and its items in the menu object
+    
     for (const [category, items] of Object.entries(menu)) {
         // Create an element to represent the category
         const categoryElement = document.createElement('h2');
